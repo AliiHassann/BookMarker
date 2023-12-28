@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+
+</head>
+
+<body>
+    <header>
+        <div class="container py-5 d-flex align-items-center flex-column">
+            <div class="title d-inline-block  pb-5">
+                <h1>Bookmarker</h1>
+            </div>
+            <div class="body d-flex flex-column align-items-center  py-3 w-100 ">
+                <h2 class="p-4 d-flex justify-content-center align-items-center">
+                    <i class="fa-solid fa-bookmark fa-1x px-1"></i>
+                    Bookmark your favorite sites
+                    <i class="fa-solid fa-bookmark fa-1x px-1"></i>
+                </h2>
+                <form action=""></form>
+                <div class="mb-4 input">
+                    <label class="fw-bold" for="siteName"> <i class="fa-solid fa-floppy-disk pb-2 pe-2"></i> Site Name</label>
+                    <input placeholder="Bookmark Name" class="form-control" type="text" id="siteName">
+                </div>
+                <div class="mb-4 input">
+                    <label class="fw-bold" for="siteURL"> <i class="fa-solid fa-link pe-1 pb-2"></i> Site URL</label>
+                    <input placeholder="Website URL" class="form-control" type="text" id="siteURL">
+                </div>
+                <button onclick="add()" class="btn btn-danger px-5 btnn">Submit</button>
+            </div>
+            <div class="table pt-4">
+                <table class="table table-striped text-center table-hover">
+                    <thead>
+                        <th>Index</th>
+                        <th>Website Name</th>
+                        <th>Visit</th>
+                        <th>Delete</th>
+                    </thead>
+                    <tbody id="data">
+                        <!-- <td><button class="btn btn-info"><a class="text-decoration-none text-bg-info" href=""><i class="fa-solid fa-eye pe-2"></i>Visit</a></button></td> -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </header>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
